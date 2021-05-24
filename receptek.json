@@ -1,0 +1,16 @@
+[
+{
+    "Név": "kukorica leves",
+    "Elkészítési idő": 30,
+    "Elérési_út":"kepek/kukoricaleves.jpg",
+    "Leírás":"így kell elkészíteni a levest",
+    "Hozzávalók":[{"kukorica(kg)":0.5}, {"tej(dl)":4},{"diónyi vaj+ kanál liszt":1}]
+    },
+    {
+    "Név": "túrós csúsza",
+    "Elkészítési idő": 30,
+    "Elérési_út":"kepek/turos-csusza.jpg",
+    "Leírás":"így kell elkészíteni a tésztát",
+    "Hozzávalók":[{"Zacskó tészta":0.5}, {"Tejföl(dl)":4},{"túró":1}] 
+    }
+]

@@ -1,0 +1,44 @@
+@charset "UTF-8";
+body{
+    background: lightblue;
+}
+main, header, div, section, article, footer{
+    border:1px solid gray;
+    padding: 5px;
+}
+main{
+    max-width: 500px;
+    margin: auto;
+}
+table {
+    border-collapse:collapse;
+    width:100%;
+    background-color: lightgreen;
+}
+table td, th {
+    border:1px solid gray;
+}
+th{
+    background: lightblue;
+}
+table tr:nth-child(even){
+    background:lightgoldenrodyellow
+
+}
+div bal{
+    text-align: left;
+    height: 10px;
+    background-color: gray;
+}
+div jobb{
+    text-align: right;
+   height:  30px;
+    background: gray;
+}
+h1 {
+     text-align: center;
+}
+img{
+    width: auto;
+    max-width: 488px;
+}
