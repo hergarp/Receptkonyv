@@ -26,14 +26,14 @@ function megjelenitRecept(recept) {
     $("section").append("<div></div>");
 ////    $("section div").append(recept.img src="Elérési_út");
 //    $("section").append("<img></img>");
-    $("section div").append("<img />").attr(recept.Elérési_út);
+//    $("section div").append("<img />").attr(recept.Elérési_út);
         var img = $('<img />').attr({
             'id': 'myImage',
-            'src': 'kepek/kukoricaleves.jpg',
+            'src': 'kepek/kukoricaleves.jpg', // attr(recept.Elérési_út),
             'alt': 'kukoricaleves.jpg',
             'title': 'kukoricaleves',
             'width': 250
-        }).appendTo('#div');
+        }).appendTo('section div');
 
 
     //Sectoin imagebe a képet
