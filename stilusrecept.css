@@ -25,16 +25,17 @@ table tr:nth-child(even){
     background:lightgoldenrodyellow
 
 }
-div bal{
+#bal{
     text-align: left;
-    height: 10px;
+    height: 20px;
     background-color: gray;
 }
-div jobb{
+#jobb{
     text-align: right;
-   height:  30px;
+   height:  20px;
     background: gray;
 }
+
 h1 {
      text-align: center;
 }

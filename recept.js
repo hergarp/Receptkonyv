@@ -2,6 +2,7 @@ var receptTomb = [];
 
 $(function () {
     $("article").on("click", "tr", megjelenit);
+    $("#bal").click(megjelenitNext);
     $.ajax(
             {url: "receptek.json",
                 success: function (result) {
@@ -28,10 +29,9 @@ function megjelenitRecept(recept) {
 //    $("section").append("<img></img>");
 //    $("section div").append("<img />").attr(recept.Elérési_út);
         var img = $('<img />').attr({
-            'id': 'myImage',
-            'src': 'kepek/kukoricaleves.jpg', // attr(recept.Elérési_út),
-            'alt': 'kukoricaleves.jpg',
-            'title': 'kukoricaleves',
+            'src': recept.Elérési_út,
+            'alt': recept.Név,
+            'title': recept.Név,
             'width': 250
         }).appendTo('section div');
 
@@ -39,11 +39,18 @@ function megjelenitRecept(recept) {
     //Sectoin imagebe a képet
 
 }
+
 function megjelenit() {
     var ID = Number($(this).attr("id"));
     console.log(ID);
-    megjelenitRecept(receptTomb[ID - 1]);
+    megjelenitRecept(receptTomb[ID-1]);
 }
+function megjelenitNext() {
+//    var ID = Number($().attr("id"));
+//    console.log(ID);
+    megjelenitRecept(receptTomb[(ID-1)+1]);
+}
+
 function tablazatbaKiir() {
     csakFejlec();
     for (var i = 0; i < receptTomb.length; i++) {
